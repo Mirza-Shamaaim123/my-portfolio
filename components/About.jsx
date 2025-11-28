@@ -59,37 +59,33 @@ export default function About() {
           variants={itemVariants}
           className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-200"
         >
-          Hello! I'm a passionate <span className="text-green-400 font-semibold">Frontend Developer</span> who thrives on creating
-          clean, modern, and interactive web experiences. I love turning complex designs into responsive and animated websites
-          that delight users.
+          Hello! I'm a dedicated <span className="text-green-400 font-semibold">PHP & Laravel Developer</span> with experience building robust, scalable, and secure web applications.
         </motion.p>
 
         <motion.p
           variants={itemVariants}
           className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-200 mt-4"
         >
-          Over the years, I’ve developed a strong foundation in building scalable web applications using modern technologies.
-          I enjoy collaborating with designers and developers to bring ideas to life and constantly learning new tools and
-          techniques.
+          I specialize in creating clean backend architectures, efficient APIs, and dynamic web solutions using Laravel, PHP, and MySQL. I enjoy optimizing code, implementing best practices, and collaborating with frontend developers to deliver seamless user experiences.
         </motion.p>
 
         <motion.p
           variants={itemVariants}
           className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-200 mt-4"
         >
-          My main stack includes:
-          <span className="text-blue-400"> React</span>,
-          <span className="text-sky-400"> Next.js</span>,
-          <span className="text-yellow-400"> Tailwind CSS</span>,
-          and <span className="text-purple-300"> Framer Motion</span>.
+          My tech stack includes:
+          <span className="text-blue-400"> PHP</span>,
+          <span className="text-sky-400"> Laravel</span>,
+          <span className="text-yellow-400"> MySQL</span>,
+          <span className="text-purple-300"> Vue.js / React</span>,
+          and <span className="text-pink-400">Tailwind CSS</span>.
         </motion.p>
 
         <motion.p
           variants={itemVariants}
           className="text-base sm:text-lg md:text-xl leading-relaxed text-gray-200 mt-4"
         >
-          I also like experimenting with animations, micro-interactions, and unique UI effects to make websites feel alive.
-          Beyond coding, I enjoy exploring tech trends, reading about UI/UX design, and contributing to open-source projects.
+          I also enjoy working with RESTful APIs, authentication systems, queues, and exploring modern Laravel packages to build efficient and maintainable applications. Outside of coding, I love contributing to open-source Laravel projects and learning about software architecture patterns.
         </motion.p>
       </motion.div>
     </div>

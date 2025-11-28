@@ -51,14 +51,16 @@ export default function HomeHero() {
         </h1>
 
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 text-amber-50">
-          Web Developer | React & Next.js Enthusiast
+          PHP & Laravel Developer 
         </h2>
 
         <p className="text-sm sm:text-base md:text-lg lg:text-xl max-w-sm sm:max-w-md md:max-w-xl text-amber-100/80 mt-2">
-          I build responsive and modern websites that are fast, clean, and visually appealing.
-          Explore my projects and let's create something amazing together!
+          I build scalable and secure web applications using PHP and Laravel.
+          I create clean backend architectures, RESTful APIs, and integrate dynamic frontend solutions
+          to deliver seamless user experiences. Let's collaborate and build something impactful!
         </p>
       </section>
+
 
     </div>
   );
