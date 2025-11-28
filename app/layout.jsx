@@ -1,13 +1,16 @@
 import "./globals.css";
-import { Space_Grotesk } from "next/font/google";
 
 
 
 
-export const spaceGrotesk = Space_Grotesk({
+
+import { Plus_Jakarta_Sans } from "next/font/google";
+
+export const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
-  weight: ["300","400","500","600","700"],
+  weight: ["300","400","500","600","700","800"],
 });
+
 
 export const metadata = {
   title: "Create Next App",
@@ -18,7 +21,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-         className={spaceGrotesk.className}
+        className={jakarta.className}
       >
         {children}
       </body>
