@@ -3,7 +3,7 @@
 import React from 'react';
 
 // import { Inter } from 'next/font/google';
-import { StarsBackground } from './ui/galaxy';
+
 
 import CardNav from './CardNav';
 
@@ -38,12 +38,12 @@ export default function HomeHero() {
     <div className="relative w-screen h-screen overflow-hidden">
 
       {/* Animated Stars Background */}
-      <StarsBackground
+      {/* <StarsBackground
         className="absolute inset-0 z-0"
         starColor="#fff"
         speed={50}
         factor={0.05}
-      />
+      /> */}
 
       {/* Navbar */}
       <CardNav
@@ -74,6 +74,8 @@ export default function HomeHero() {
           Explore my projects and let's create something amazing together!
         </p>
       </section>
+      
+
     </div>
   );
 }

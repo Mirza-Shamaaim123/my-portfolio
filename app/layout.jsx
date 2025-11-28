@@ -1,5 +1,6 @@
 import "./globals.css";
 import { Plus_Jakarta_Sans } from "next/font/google";
+import { StarsBackground } from "@/components/ui/galaxy";
 
 export const jakarta = Plus_Jakarta_Sans({
   subsets: ["latin"],
@@ -16,8 +17,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={jakarta.className}
+        className={`relative overflow-x-hidden ${jakarta.className}`}
       >
+        <StarsBackground className="fixed inset-0 -z-10" />
         {children}
       </body>
     </html>
