@@ -1,11 +1,37 @@
 'use client';
 
 import React from 'react';
-import Navbar from '@/components/ui/Navbar';
+
 // import { Inter } from 'next/font/google';
 import { StarsBackground } from './ui/galaxy';
 
+import CardNav from './CardNav';
+
+
 // const inter = Inter({ subsets: ['latin'], weight: '400' });
+
+
+const items = [
+  {
+    label: "About",
+    bgColor: "#0D0716",
+    textColor: "#fff",
+    links: [
+      { label: "Company", href: "#company", ariaLabel: "About Company" },
+      { label: "Careers", href: "#careers", ariaLabel: "About Careers" }
+    ]
+  },
+  {
+    label: "Projects",
+    bgColor: "#170D27",
+    textColor: "#fff",
+    links: [
+      { label: "Featured", href: "#featured", ariaLabel: "Featured Projects" },
+      { label: "Case Studies", href: "#case", ariaLabel: "Project Case Studies" }
+    ]
+  },
+];
+
 
 export default function HomeHero() {
   return (
@@ -20,7 +46,16 @@ export default function HomeHero() {
       />
 
       {/* Navbar */}
-      <Navbar />
+      <CardNav
+        logo={<span className="font-bold text-white text-xl">LOGO</span>} // ✅ Text logo
+        logoAlt=" Logo"
+        items={items}   // ✅ Yahan items pass kar rahe hain
+        baseColor="transparent"       // 🔹 black background
+        menuColor="#fff"       // 🔹 hamburger/menu icon color
+        buttonBgColor="#111"   // button background
+        buttonTextColor="#fff"
+        ease="power3.out"
+      />
 
       {/* Hero Content */}
       <section
