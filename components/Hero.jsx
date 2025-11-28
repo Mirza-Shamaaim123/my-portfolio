@@ -2,10 +2,10 @@
 
 import React from 'react';
 import Navbar from '@/components/ui/Navbar';
-import { Inter } from 'next/font/google';
+// import { Inter } from 'next/font/google';
 import { StarsBackground } from './ui/galaxy';
 
-const inter = Inter({ subsets: ['latin'], weight: '400' });
+// const inter = Inter({ subsets: ['latin'], weight: '400' });
 
 export default function HomeHero() {
   return (
@@ -24,10 +24,10 @@ export default function HomeHero() {
 
       {/* Hero Content */}
       <section
-        className={`relative w-full h-full flex flex-col justify-center items-center text-center px-6 sm:px-10 md:px-20 lg:px-40 z-10 ${inter.className}`}
+        className="relative w-full h-full flex flex-col justify-center items-center text-center px-6 sm:px-10 md:px-20 lg:px-40 z-10 "
       >
         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-amber-50">
-          Hello, I'm <span className="text-yellow-300">Shamaaim</span>
+          Hello, I'm <span className="text-green-300">Shamaaim</span>
         </h1>
 
         <h2 className="text-2xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 text-amber-50">
