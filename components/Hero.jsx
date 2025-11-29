@@ -32,7 +32,7 @@ export default function HomeHero() {
 
       {/* Navbar */}
       <CardNav
-        logo={<span className="font-bold text-white text-xl">LOGO</span>}
+        logo={<span className="font-bold text-white text-xl">PORTFOLIO</span>}
         logoAlt="Logo"
         items={items}
         baseColor="light-black"
