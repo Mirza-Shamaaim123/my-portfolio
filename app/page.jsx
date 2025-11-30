@@ -9,7 +9,7 @@ export default function Page() {
     <div className="relative z-10">
       <Hero />
       <About/>
-      {/* <Project/> */}
+      <Project/>
 
     </div>
       
