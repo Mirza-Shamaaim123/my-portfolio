@@ -23,6 +23,15 @@ const items = [
       { label: "Featured", href: "#featured", ariaLabel: "Featured Projects" },
       { label: "Case Studies", href: "#case", ariaLabel: "Project Case Studies" }
     ]
+  },
+    {
+    label: "Contact",
+    bgColor: "#000",
+    textColor: "#fff",
+    links: [
+      { label: "Contact", href: "#contact", ariaLabel: "Contact Section" },
+      { label: "Case Studies", href: "#case", ariaLabel: "Project Case Studies" }
+    ]
   }
 ];
 
