@@ -12,6 +12,7 @@ export default function Page() {
       <About/>
       <Project/>
       <SkillsSection />
+     
 
     </div>
       

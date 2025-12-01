@@ -18,28 +18,10 @@ export default function ContactModal({ isOpen, setIsOpen }) {
             setIsOpen(false);
           }}
         >
-          <input
-            type="text"
-            placeholder="Your Name"
-            className="w-full p-3 rounded-md bg-gray-800 text-white focus:outline-none"
-            required
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            className="w-full p-3 rounded-md bg-gray-800 text-white focus:outline-none"
-            required
-          />
-          <textarea
-            placeholder="Your Message"
-            className="w-full p-3 rounded-md bg-gray-800 text-white focus:outline-none"
-            rows={4}
-            required
-          />
-          <button
-            type="submit"
-            className="w-full bg-green-500 hover:bg-green-600 transition-colors duration-300 py-2 rounded-md font-semibold"
-          >
+          <input type="text" placeholder="Your Name" className="w-full p-3 rounded-md bg-gray-800 text-white focus:outline-none" required />
+          <input type="email" placeholder="Your Email" className="w-full p-3 rounded-md bg-gray-800 text-white focus:outline-none" required />
+          <textarea placeholder="Your Message" className="w-full p-3 rounded-md bg-gray-800 text-white focus:outline-none" rows={4} required />
+          <button type="submit" className="w-full bg-green-500 hover:bg-green-600 transition-colors duration-300 py-2 rounded-md font-semibold">
             Send Message
           </button>
         </form>

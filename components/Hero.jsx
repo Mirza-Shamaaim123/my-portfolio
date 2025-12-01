@@ -1,7 +1,9 @@
 'use client';
 
 import React from 'react';
-import CardNav from './CardNav';
+import { FloatingNav } from './ui/floating-navbar';
+import ContactModal from './ContactModal';
+// import CardNav from './CardNav';
 
 const items = [
   {
@@ -24,23 +26,25 @@ const items = [
       { label: "Case Studies", href: "#case", ariaLabel: "Project Case Studies" }
     ]
   },
-    {
+  {
     label: "Contact",
     bgColor: "#000",
     textColor: "#fff",
     links: [
-      { label: "Contact", href: "#contact", ariaLabel: "Contact Section" },
+      { label: "Contact", href: "/contact", ariaLabel: "Contact Section" },
       { label: "Case Studies", href: "#case", ariaLabel: "Project Case Studies" }
     ]
   }
 ];
 
 export default function HomeHero() {
+  const [isContactOpen, setIsContactOpen] = React.useState(false);
   return (
+    
     <div className="relative w-full min-h-screen overflow-hidden">
 
       {/* Navbar */}
-      <CardNav
+      {/* <CardNav
         logo={<span className="font-bold text-white text-xl">PORTFOLIO</span>}
         logoAlt="Logo"
         items={items}
@@ -49,7 +53,15 @@ export default function HomeHero() {
         buttonBgColor="#111"
         buttonTextColor="#fff"
         ease="power3.out"
-      />
+      /> */}
+      
+      <FloatingNav navItems={[
+        { name: "Home", link: "/" },
+        { name: "About", link: "#about" },
+        { name: "Projects", link: "/projects" },
+        { name: "Contact", onClick: () => setIsContactOpen(true) },
+      ]} />
+
 
       {/* Hero Content */}
       <section
@@ -60,7 +72,7 @@ export default function HomeHero() {
         </h1>
 
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 text-amber-50">
-          PHP & Laravel Developer 
+          PHP & Laravel Developer
         </h2>
 
         <p className="text-sm sm:text-base md:text-lg lg:text-xl max-w-sm sm:max-w-md md:max-w-xl text-amber-100/80 mt-2">
@@ -69,6 +81,7 @@ export default function HomeHero() {
           to deliver seamless user experiences. Let's collaborate and build something impactful!
         </p>
       </section>
+      <ContactModal isOpen={isContactOpen} setIsOpen={setIsContactOpen} />
 
 
     </div>
