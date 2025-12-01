@@ -68,7 +68,7 @@ export default function HomeHero() {
         className="relative w-full min-h-screen flex flex-col justify-center items-center text-center px-4 sm:px-8 md:px-20 lg:px-40 z-10"
       >
         <h1 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4 text-amber-50 leading-tight">
-          Hello, I'm <span className="text-green-300">Shamaaim</span>
+          Hello, I'm <span className="text-green-400">Shamaaim</span>
         </h1>
 
         <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl mb-4 text-amber-50">
