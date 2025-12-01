@@ -120,7 +120,7 @@ export default function ReadCvModal({ buttonBgColor, buttonTextColor }) {
               <div className="flex justify-between">
                 <div>
                   <p className="text-lg font-semibold text-white">
-                    Govt Degree College
+                    Govt. Municipal Graduate College
                   </p>
                   <p className="text-gray-400">Faisalabad, Pakistan</p>
                   <p className="text-gray-400">Aug 2020 – Jul 2022</p>
