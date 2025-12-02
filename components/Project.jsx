@@ -76,7 +76,7 @@ export default function ProjectSection() {
         variants={containerVariants}
         initial="hidden"
         animate={isInView ? 'visible' : 'hidden'}
-        className="w-full max-w-6xl mx-auto backdrop-blur-xl bg-white/5 border-4 border-pink-500 rounded-3xl p-6 sm:p-8 md:p-10 lg:p-14 shadow-[0_0_30px_#ff69b4] hover:shadow-[0_0_60px_#ff69b4] transition-shadow duration-500"
+        className="w-full max-w-6xl mx-auto backdrop-blur-xl bg-white/5 border-4 border-green-500 rounded-3xl p-6 sm:p-8 md:p-10 lg:p-14 shadow-[0_0_30px_#22c55e] hover:shadow-[0_0_60px_#22c55e] transition-shadow duration-500"
       >
         {/* Heading */}
         <motion.h1
@@ -98,7 +98,7 @@ export default function ProjectSection() {
               key={project.id}
               variants={cardVariants}
               whileHover={{ scale: 1.05 }}
-              className="text-white rounded-2xl p-5 sm:p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-4 border-pink-600 bg-black/20"
+              className="text-white rounded-2xl p-5 sm:p-6 md:p-8 shadow-xl hover:shadow-2xl transition-all duration-300 border-4 border-green-600 bg-black/20"
             >
               <img
                 src={project.image}
@@ -118,7 +118,7 @@ export default function ProjectSection() {
                 href={project.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-block bg-white text-pink-600 font-semibold py-2 px-4 rounded-full shadow-md hover:bg-pink-600 hover:text-white transition duration-300"
+                className="inline-block bg-white text-green-500 font-semibold py-2 px-4 rounded-full shadow-md hover:bg-green-600 hover:text-white transition duration-300"
               >
                 View Details
               </a>

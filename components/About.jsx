@@ -42,10 +42,10 @@ export default function About() {
         animate={isInView ? 'visible' : 'hidden'}
         className="
           max-w-5xl w-full backdrop-blur-xl bg-white/5 
-          border-4 border-pink-500 rounded-3xl 
+          border-4 border-green-500 rounded-3xl 
           p-6 sm:p-10 md:p-14 
-          shadow-[0_0_30px_#ff69b4]
-          hover:shadow-[0_0_60px_#ff69b4] transition-shadow duration-500
+          shadow-[0_0_30px_#22c55e]
+          hover:shadow-[0_0_60px_#22c55e] transition-shadow duration-500
         "
       >
         <motion.h1
