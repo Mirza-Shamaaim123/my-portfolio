@@ -132,9 +132,10 @@ export default function ReadCvModal({ buttonBgColor, buttonTextColor }) {
             </h3>
 
             <ul className="mt-3 space-y-1 text-gray-200">
+              <li>Laravel</li>
+              <li>PHP</li>
               <li>Next.js</li>
               <li>React</li>
-              <li>TypeScript</li>
               <li>Tailwind CSS</li>
             </ul>
           </div>
