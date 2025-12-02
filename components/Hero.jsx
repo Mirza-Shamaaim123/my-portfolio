@@ -58,7 +58,7 @@ export default function HomeHero() {
       <FloatingNav navItems={[
         { name: "Home", link: "/" },
         { name: "About", link: "#about" },
-        { name: "Projects", link: "/projects" },
+        { name: "Projects", link: "#projects" },
         { name: "Contact", onClick: () => setIsContactOpen(true) },
       ]} />
 

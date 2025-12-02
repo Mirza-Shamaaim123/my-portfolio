@@ -61,53 +61,22 @@ export default function ReadCvModal({ buttonBgColor, buttonTextColor }) {
 
             <div className="mt-6 space-y-8">
 
-              {/* Job 1 */}
+              {/* Internship - X Logic Solution */}
               <div className="flex justify-between">
                 <div>
-                  <p className="text-lg font-semibold text-white">
-                    Devontix Solutions
-                  </p>
+                  <p className="text-lg font-semibold text-white">X Logic Solution</p>
                   <p className="text-gray-400">Faisalabad, Pakistan</p>
-                  <p className="text-gray-400">Jan 2024 – Present</p>
+                  <p className="text-gray-400">Dec 2024 – Present</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-gray-200 font-semibold">Web Developer</p>
-                  <p className="text-gray-400 text-sm">6+ months</p>
-                </div>
-              </div>
-
-              {/* Job 2 */}
-              <div className="flex justify-between">
-                <div>
-                  <p className="text-lg font-semibold text-white">Tecsnsol</p>
-                  <p className="text-gray-400">Faisalabad, Pakistan</p>
-                  <p className="text-gray-400">July 2023 – Jan 2024</p>
-                </div>
-                <div className="text-right">
-                  <p className="text-gray-200 font-semibold">Frontend Dev</p>
-                  <p className="text-gray-400 text-sm">6+ months</p>
-                </div>
-              </div>
-
-              {/* Job 3 */}
-              <div className="flex justify-between">
-                <div>
-                  <p className="text-lg font-semibold text-white">
-                    Nexus Solutions
-                  </p>
-                  <p className="text-gray-400">Faisalabad, Pakistan</p>
-                  <p className="text-gray-400">Nov 2022 – Jun 2023</p>
-                </div>
-                <div className="text-right">
-                  <p className="text-gray-200 font-semibold">
-                    Support Specialist
-                  </p>
-                  <p className="text-gray-400 text-sm">8+ months</p>
+                  <p className="text-gray-200 font-semibold">Frontend Intern</p>
+                  <p className="text-gray-400 text-sm">Ongoing</p>
                 </div>
               </div>
 
             </div>
           </div>
+
 
           {/* EDUCATION */}
           <div>
