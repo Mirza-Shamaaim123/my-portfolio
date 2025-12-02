@@ -26,9 +26,9 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold text-white mb-4">Quick Links</h3>
           <ul className="space-y-2">
-            <li><a className="hover:text-white" href="#">Home</a></li>
-            <li><a className="hover:text-white" href="#">Projects</a></li>
-            <li><a className="hover:text-white" href="#">About Me</a></li>
+            <li><a className="hover:text-white" href="/">Home</a></li>
+            <li><a className="hover:text-white" href="#projects">Projects</a></li>
+            <li><a className="hover:text-white" href="#about">About Me</a></li>
             <li><a className="hover:text-white" href="#">Contact</a></li>
           </ul>
         </div>
@@ -37,14 +37,14 @@ export default function Footer() {
         <div>
           <h3 className="text-xl font-semibold text-white mb-4">Contact</h3>
           <ul className="space-y-2 text-gray-400">
-            <li>Email: for.hamza007@gmail.com</li>
+            <li>Email: shamaaimmirza902@gmail.com</li>
             <li>Location: Pakistan</li>
             <li>Available for freelance & projects</li>
           </ul>
         </div>
       </div>
 
-      <div className="border-t border-gray-700 mt-10 pt-5 text-center text-gray-400 text-sm">
+      <div className="border-t border-green-700 mt-10 pt-5 text-center text-gray-400 text-sm">
         © {new Date().getFullYear()} Shamaaim — All rights reserved.
       </div>
     </footer>
