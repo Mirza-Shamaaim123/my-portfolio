@@ -43,18 +43,7 @@ export default function HomeHero() {
     
     <div className="relative w-full min-h-screen overflow-hidden">
 
-      {/* Navbar */}
-      {/* <CardNav
-        logo={<span className="font-bold text-white text-xl">PORTFOLIO</span>}
-        logoAlt="Logo"
-        items={items}
-        baseColor="light-black"
-        menuColor="#fff"
-        buttonBgColor="#111"
-        buttonTextColor="#fff"
-        ease="power3.out"
-      /> */}
-      
+      {/* Navbar */}      
       <FloatingNav navItems={[
         { name: "Home", link: "/" },
         { name: "About", link: "#about" },
