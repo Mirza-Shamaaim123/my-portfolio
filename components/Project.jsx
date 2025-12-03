@@ -31,14 +31,15 @@ export default function ProjectSection() {
        link: "#",
        image: "/project2.png",
      },
-    {
-      id: "03",
-      title: "Nebula",
-      description: "AI automation platform to manage workflows and agents.",
-      tags: ["Next.js", "MongoDB", "Stripe"],
-      link: "#",
-      image: "https://via.placeholder.com/800",
-    },
+     {
+     id: "03",
+     title: "Job Portal Website",
+      description:
+       "A complete job portal system where users can search jobs, apply, and companies can post new job listings. Built with Laravel and MySQL including authentication, job posting, user dashboard, and role-based access.",
+     tags: ["Laravel", "MySQL", "Bootstrap"],
+     link: "#",
+     image: "/project3.png",
+   },
   ];
 
   // Mouse movement tilt calculation
@@ -204,11 +205,12 @@ export default function ProjectSection() {
 //     ,
 //     {
 //       id: "03",
-//       title: "Nebula",
-//       description: "AI automation platform to manage workflows and agents.",
-//       tags: ["Next.js", "MongoDB", "Stripe"],
+//       title: "Job Portal Website",
+//       description:
+//         "A complete job portal system where users can search jobs, apply, and companies can post new job listings. Built with Laravel and MySQL including authentication, job posting, user dashboard, and role-based access.",
+//       tags: ["Laravel", "MySQL", "Bootstrap"],
 //       link: "#",
-//       image: "https://via.placeholder.com/800",
+//       image: "/project3.png",
 //     },
 //   ];
 
