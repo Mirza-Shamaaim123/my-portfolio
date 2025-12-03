@@ -22,31 +22,32 @@ export default function ProjectSection() {
       link: "https://html.themehour.net/barab/demo/index.html",
       image: "/project1.png",
     },
-        {
+    {
       id: "02",
-       title: "Multi-Tenant Subscription System",
+      title: "Multi-Tenant Subscription System",
       description:
-         "A subscription-based multi-tenant platform where users can purchase plans and instantly create their own stores, built for scalability and easy management.",
-       tags: ["Laravel", "Stripe", "MySQL", "Tailwind CSS"],
-       link: "#",
-       image: "/project2.png",
-     },
-     {
-     id: "03",
-     title: "Job Portal Website",
+        "A subscription-based multi-tenant platform where users can purchase plans and instantly create their own stores, built for scalability and easy management.",
+      tags: ["Laravel", "Stripe", "MySQL", "Tailwind CSS"],
+      link: "#",
+      image: "/project2.png",
+    },
+    {
+      id: "03",
+      title: "Job Portal Website",
       description:
-       "A complete job portal system where users can search jobs, apply, and companies can post new job listings. Built with Laravel and MySQL including authentication, job posting, user dashboard, and role-based access.",
-     tags: ["Laravel", "MySQL", "Bootstrap"],
-     link: "#",
-     image: "/project3.png",
-   },
+        "A complete job portal system where users can search jobs, apply, and companies can post new job listings. Built with Laravel and MySQL including authentication, job posting, user dashboard, and role-based access.",
+      tags: ["Laravel", "MySQL", "Bootstrap"],
+      link: "#",
+      image: "/project3.png",
+    },
   ];
 
   // Mouse movement tilt calculation
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 25; // tilt left/right
-    const y = ((e.clientY - rect.top) / rect.height - 0.5) * 15; // tilt up/down
+    const x = ((e.clientX - rect.left) / rect.width - 0.5) * 25;
+    const y = ((e.clientY - rect.top) / rect.height - 0.5) * 15;
+
     setTilt({ x, y });
     setMousePos({ x: e.clientX - rect.left, y: e.clientY - rect.top });
   };
@@ -69,14 +70,14 @@ export default function ProjectSection() {
         </motion.h2>
 
         {/* Projects List */}
-        <div className="space-y-32">
+        <div className="space-y-32 relative">
           {projects.map((project, index) => (
             <motion.div
               key={project.id}
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="relative group cursor-pointer"
+              className="relative group cursor-pointer pb-6" // space for underline
               onMouseEnter={() => setHovered(index)}
               onMouseLeave={() => setHovered(null)}
               onMouseMove={handleMouseMove}
@@ -86,24 +87,24 @@ export default function ProjectSection() {
               <a
                 href={project.link}
                 target="_blank"
-                className="absolute right-0 top-1/2 -translate-y-1/2 opacity-70 group-hover:opacity-100 transition"
+                className="absolute right-0 top-1/2 -translate-y-1/2 opacity-70 group-hover:opacity-100 transition z-30"
               >
                 <ExternalLink size={28} />
               </a>
 
               {/* Title */}
-              <h1 className="text-4xl md:text-5xl font-semibold tracking-tight flex items-center gap-4">
+              <h1 className="text-4xl md:text-5xl font-semibold tracking-tight flex items-center gap-4 z-20 relative">
                 {project.title}
                 <span className="text-gray-400 text-lg">{project.id}</span>
               </h1>
 
               {/* Description */}
-              <p className="mt-4 text-gray-300 text-lg max-w-2xl leading-relaxed">
+              <p className="mt-4 text-gray-300 text-lg max-w-2xl leading-relaxed z-20 relative">
                 {project.description}
               </p>
 
               {/* Tags */}
-              <div className="flex flex-wrap gap-3 mt-5">
+              <div className="flex flex-wrap gap-3 mt-5 z-20 relative">
                 {project.tags.map((tag, i) => (
                   <span
                     key={i}
@@ -114,23 +115,33 @@ export default function ProjectSection() {
                 ))}
               </div>
 
-              {/* Hover Image (Tilt + Mouse Follow) */}
+              {/* 🔥 Bottom Underline Animation */}
+              <motion.div
+                className="absolute left-0 bottom-0 h-[2px] bg-green-400 rounded-full z-10"
+                initial={{ width: 0, opacity: 0 }}
+                animate={
+                  hovered === index
+                    ? { width: "100%", opacity: 1 }
+                    : { width: 0, opacity: 0 }
+                }
+                transition={{ duration: 0.3 }}
+              />
+
+              {/* Hover Image (Always above underline) */}
               {hovered === index && (
                 <motion.div
-                  className="absolute hidden md:block"
+                  className="absolute hidden md:block z-20 pointer-events-none"
                   style={{
                     top: mousePos.y,
                     left: mousePos.x,
                     translate: "-50% -50%",
-                    pointerEvents: "none",
                   }}
                 >
                   <motion.img
                     src={project.image}
-                    initial={{ opacity: 0, }}
+                    initial={{ opacity: 0 }}
                     animate={{
                       opacity: 1,
-
                       rotateY: tilt.x,
                       rotateX: -tilt.y,
                     }}
@@ -161,6 +172,8 @@ export default function ProjectSection() {
     </section>
   );
 }
+
+
 
 
 
