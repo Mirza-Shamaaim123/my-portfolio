@@ -42,7 +42,6 @@ export default function ProjectSection() {
     },
   ];
 
-  // Mouse movement tilt calculation
   const handleMouseMove = (e) => {
     const rect = e.currentTarget.getBoundingClientRect();
     const x = ((e.clientX - rect.left) / rect.width - 0.5) * 25;
@@ -59,7 +58,6 @@ export default function ProjectSection() {
       className="min-h-screen w-full px-6 md:px-12 lg:px-20 py-32 text-white"
     >
       <div className="max-w-5xl mx-auto space-y-16">
-        {/* Section Heading */}
         <motion.h2
           className="text-5xl md:text-6xl font-bold tracking-wide text-green-400 text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -69,7 +67,6 @@ export default function ProjectSection() {
           PROJECTS
         </motion.h2>
 
-        {/* Projects List */}
         <div className="space-y-32 relative">
           {projects.map((project, index) => (
             <motion.div
@@ -77,7 +74,7 @@ export default function ProjectSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="relative group cursor-pointer pb-6" // space for underline
+              className="relative group cursor-pointer pb-6"
               onMouseEnter={() => setHovered(index)}
               onMouseLeave={() => setHovered(null)}
               onMouseMove={handleMouseMove}
@@ -87,7 +84,7 @@ export default function ProjectSection() {
               <a
                 href={project.link}
                 target="_blank"
-                className="absolute right-0 top-1/2 -translate-y-1/2 opacity-70 group-hover:opacity-100 transition z-30"
+                className="absolute right-0 top-1/2 -translate-y-1/2 opacity-70 group-hover:opacity-100 transition z-50"
               >
                 <ExternalLink size={28} />
               </a>
@@ -115,7 +112,7 @@ export default function ProjectSection() {
                 ))}
               </div>
 
-              {/* 🔥 Bottom Underline Animation */}
+              {/* Bottom Underline */}
               <motion.div
                 className="absolute left-0 bottom-0 h-[2px] bg-green-400 rounded-full z-10"
                 initial={{ width: 0, opacity: 0 }}
@@ -127,7 +124,7 @@ export default function ProjectSection() {
                 transition={{ duration: 0.3 }}
               />
 
-              {/* Hover Image (Always above underline) */}
+              {/* Hover Image */}
               {hovered === index && (
                 <motion.div
                   className="absolute hidden md:block z-20 pointer-events-none"
@@ -158,6 +155,7 @@ export default function ProjectSection() {
                       shadow-2xl
                       border border-green-400/30
                       will-change-transform
+                      pointer-events-none
                     "
                     style={{
                       transformStyle: "preserve-3d",
