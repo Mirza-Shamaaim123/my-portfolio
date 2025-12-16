@@ -14,9 +14,12 @@ export default function ReadCvModal({ buttonBgColor, buttonTextColor }) {
       <DialogTrigger asChild>
         <button
           type="button"
-          className="card-nav-cta-button inline-flex border-0 rounded-lg px-4 py-2 items-center font-medium cursor-pointer transition-colors duration-300"
-
-          style={{ backgroundColor: buttonBgColor, color: buttonTextColor }}
+          className="
+    inline-flex rounded-lg px-4 py-2 items-center font-medium
+    cursor-pointer transition-colors duration-300
+    text-white dark:text-white
+    hover:text-green-500
+  "
         >
           READ CV
         </button>
