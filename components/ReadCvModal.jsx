@@ -70,7 +70,7 @@ export default function ReadCvModal({ buttonBgColor, buttonTextColor }) {
                 <div>
                   <p className="text-lg font-semibold text-white">X Logic Solution</p>
                   <p className="text-gray-400">Faisalabad, Pakistan</p>
-                  <p className="text-gray-400">July 2025 – Present</p>
+                  <p className="text-gray-400">Sep 2022 – Dec 2022</p>
                 </div>
                 <div className="text-right">
                   <p className="text-gray-200 font-semibold">Backend Developer</p>
