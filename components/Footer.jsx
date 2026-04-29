@@ -38,7 +38,7 @@ export default function Footer() {
         <div className="text-center md:text-left">
           <h3 className="text-xl font-semibold text-white mb-4">Contact</h3>
           <ul className="space-y-2 text-gray-400">
-            <li>Email: shamaaimmirza902@gmail.com</li>
+            <li>Email: shamaaimmirza806@gmail.com</li>
             <li>Location: Pakistan</li>
             <li>Available for freelance & projects</li>
           </ul>
