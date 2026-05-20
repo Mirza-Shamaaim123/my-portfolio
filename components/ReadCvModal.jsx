@@ -79,7 +79,7 @@ export default function ReadCvModal({ buttonBgColor, buttonTextColor }) {
               </div>
                <div className="flex justify-between">
                 <div>
-                  <p className="text-lg font-semibold text-white">Cubix Solution</p>
+                  <p className="text-lg font-semibold text-white">Cubix Sol</p>
                   <p className="text-gray-400">Faisalabad, Pakistan</p>
                   <p className="text-gray-400">Dec 2025 – Present</p>
                 </div>
